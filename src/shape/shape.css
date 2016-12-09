@@ -1,0 +1,45 @@
+[data-btn~="rounded"] {
+  border-radius: 10px;
+}
+
+[data-btn~="pill"] {
+  border-radius: 20em;
+}
+
+[data-btn~="circle"] {
+  border-radius: 50%;
+  padding: 0;
+  width: 2em;
+
+  &[data-btn~="large"] {
+    width: 1.9em;
+  }
+
+  &[data-btn~="jumbo"] {
+    width: 1.8em;
+  }
+}
+
+[data-btn~="sharp"] {
+  border-radius: 0;
+}
+
+[data-btn~="block"] {
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+  line-height: 1;
+  box-sizing: border-box;
+}
+
+[data-btn~="block-v"] {
+  height: 100%;
+  border-radius: 0;
+  line-height: 1;
+  box-sizing: border-box;
+}
+
+[data-btn~="block-h"] {
+  /* width: 100%; XXX messes up aligment when ading padding do not set */
+  flex: 1;
+}

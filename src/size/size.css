@@ -1,0 +1,72 @@
+[data-btn] {
+  font-size: var(--default);
+}
+
+[data-btn~="tiny"] {
+  font-size: var(--tiny);
+}
+
+[data-btn~="small"] {
+  font-size: var(--small);
+}
+
+[data-btn~="large"] {
+  font-size: var(--large);
+  height: 1.9em;
+  line-height: 1.9em;
+
+  &[data-btn~="outline"] {
+    height: calc(1.9em - 4px);
+    line-height: calc(1.9em - 4px);
+  }
+
+  &[data-btn~="block"] {
+    line-height: 1;
+    height: 100%;
+  }
+
+  &[data-btn~="transparent"] {
+    padding: 0 .4em; /* less spacing for visual alignment */
+  }
+}
+
+[data-btn~="x-large"] {
+  font-size: var(--x-large);
+  height: 1.9em;
+  line-height: 1.9em;
+
+  &[data-btn~="outline"] {
+    height: calc(1.9em - 4px);
+    line-height: calc(1.9em - 4px);
+  }
+
+  &[data-btn~="block"] {
+    line-height: 1;
+    height: 100%;
+  }
+}
+
+[data-btn~="jumbo"] {
+  font-size: var(--jumbo);
+  height: 1.8em;
+  line-height: 1.8em;
+
+  &[data-btn~="outline"] {
+    height: calc(1.8em - 4px);
+    line-height: calc(1.8em - 4px);
+  }
+
+  &[data-btn~="block"] {
+    line-height: 1;
+    height: 100%;
+  }
+}
+
+:root {
+  --tiny:    12px;
+  --small:   14px;
+  --default: 16px;
+  --large:   21px;
+  --x-large: 24px;
+  --jumbo:   32px;
+}

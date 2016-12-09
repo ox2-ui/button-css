@@ -1,0 +1,74 @@
+
+[data-btn] {
+  padding: 0 .7em;
+  user-select: none;
+  border: 0;
+  margin: 0;
+  outline: none;
+  text-align: center;
+  cursor: pointer;
+  vertical-align: middle;
+  color: white;
+  border-radius: .3em;
+  height: 2em;
+  line-height: 2em;
+  transition-property: all;
+  transition-duration: 0.3s;
+  font-family: "Roboto Condensed";
+
+  -webkit-font-smoothing: antialiased; /* crisper text */
+
+
+  &:active:enabled {
+    /* Same as in the colored button generator */
+    box-shadow: inset 0px 2px 6px rgba(0, 0, 0, 0.5), 0px 1px 0px rgba(255, 255, 255, 0.4);
+    text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.2);
+    /* Removes background change on mobile devices */
+    transition-property: background;
+    transition-duration: .5s;
+  }
+
+  & i, span {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    vertical-align: middle;
+  }
+
+  &:disabled {
+    opacity: .6;
+    cursor: default;
+  }
+}
+
+[data-btn~="icon-only"] {
+  padding: 0 .5em;
+}
+
+[data-btn~="raised"] {
+  transition: box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0.2s;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+}
+
+[data-btn~="outline"] {
+  background-color: inherit;
+  border: 2px solid grey;
+  height: calc(2em - 4px);
+  line-height: calc(2em - 4px);
+  box-sizing: content-box;
+
+  &:active:enabled {
+    box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.3);
+    background-color: inherit;
+  }
+}
+
+[data-btn~="transparent"] {
+  background-color: hsla(0, 0%, 0%, 0);
+
+  &:active:enabled {
+    background-color: hsla(0, 0%, 0%, 0);
+    box-shadow: none;
+    text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.2);
+  }
+}

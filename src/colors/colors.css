@@ -1,0 +1,106 @@
+/* Standard */
+
+[data-btn] {
+  background-color: var(--neutral);
+}
+
+[data-btn~="action"] {
+  background-color: var(--action);
+}
+
+[data-btn~="warning"] {
+  background-color: var(--warning);
+}
+
+[data-btn~="critical"] {
+  background-color: var(--critical);
+}
+
+[data-btn~="positive"] {
+  background-color: var(--positive);
+}
+
+[data-btn~="negative"] {
+  background-color: var(--negative);
+}
+
+
+/* Outline */
+
+[data-btn~="outline"] {
+  background-color: inherit;
+  color: var(--neutral);
+  border-color: var(--neutral);
+}
+
+[data-btn~="action"][data-btn~="outline"] {
+  background-color: inherit;
+  color: var(--action);
+  border-color: var(--action);
+}
+
+[data-btn~="warning"][data-btn~="outline"] {
+  background-color: inherit;
+  color: var(--warning);
+  border-color: var(--warning);
+}
+
+[data-btn~="critical"][data-btn~="outline"] {
+  background-color: inherit;
+  color: var(--critical);
+  border-color: var(--critical);
+}
+
+[data-btn~="positive"][data-btn~="outline"] {
+  background-color: inherit;
+  color: var(--positive);
+  border-color: var(--positive);
+}
+
+[data-btn~="negative"][data-btn~="outline"] {
+  background-color: inherit;
+  color: var(--negative);
+  border-color: var(--negative);
+}
+
+/* Transparent */
+
+[data-btn~="transparent"] {
+  background-color: hsla(0, 0%, 0%, 0);
+  color: var(--neutral);
+}
+
+[data-btn~="action"][data-btn~="transparent"] {
+  background-color: hsla(0, 0%, 0%, 0);
+  color: var(--action);
+}
+
+[data-btn~="warning"][data-btn~="transparent"] {
+  background-color: hsla(0, 0%, 0%, 0);
+  color: var(--warning);
+}
+
+[data-btn~="critical"][data-btn~="transparent"] {
+  background-color: hsla(0, 0%, 0%, 0);
+  color: var(--critical);
+}
+
+
+[data-btn~="positive"][data-btn~="transparent"] {
+  background-color: hsla(0, 0%, 0%, 0);
+  color: var(--positive);
+}
+
+[data-btn~="negative"][data-btn~="transparent"] {
+  background-color: hsla(0, 0%, 0%, 0);
+  color: var(--negative);
+}
+
+:root {
+  --neutral: hsla(0, 0%, 50%, 1);
+  --action: hsla(145, 63%, 42%, 1);
+  --warning: hsla(37, 90%, 51%, 1);
+  --critical: hsla(6, 63%, 46%, 1);
+  --positive: hsla(214, 70%, 53%, 1);
+  --negative: hsla(39, 100%, 50%, 1);
+}

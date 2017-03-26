@@ -24,6 +24,10 @@
   background-color: var(--negative);
 }
 
+[data-btn~="highlight"] {
+  background-color: var(--highlight);
+}
+
 
 /* Outline */
 
@@ -63,6 +67,12 @@
   border-color: var(--negative);
 }
 
+[data-btn~="highlight"][data-btn~="outline"] {
+  background-color: inherit;
+  color: var(--highlight);
+  border-color: var(--highlight);
+}
+
 /* Transparent */
 
 [data-btn~="transparent"] {
@@ -96,6 +106,11 @@
   color: var(--negative);
 }
 
+[data-btn~="highlight"][data-btn~="transparent"] {
+  background-color: hsla(0, 0%, 0%, 0);
+  color: var(--negative);
+}
+
 :root {
   --neutral: hsla(0, 0%, 50%, 1);
   --action: hsla(145, 63%, 42%, 1);
@@ -103,4 +118,5 @@
   --critical: hsla(6, 63%, 46%, 1);
   --positive: hsla(214, 70%, 53%, 1);
   --negative: hsla(39, 100%, 50%, 1);
+  --highlight: hsla(282, 44%, 47%, 1);
 }

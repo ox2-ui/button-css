@@ -40,7 +40,12 @@
   }
 }
 
+// Legacy
 [data-btn~="icon-only"] {
+  padding: 0 .5em;
+}
+
+[data-btn~="square"] {
   padding: 0 .5em;
 }
 

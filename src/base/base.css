@@ -17,6 +17,11 @@
   font-family: "Roboto Condensed";
 
   -webkit-font-smoothing: antialiased; /* crisper text */
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+  &:focus {
+    outline: 0;
+  }
 
 
   &:active:enabled {

@@ -1,3 +1,5 @@
+### Package is no longer maintaned.
+
 # button-css
 ![NPM version](https://img.shields.io/npm/v/@ox2/button-css.svg?style=flat)
 
